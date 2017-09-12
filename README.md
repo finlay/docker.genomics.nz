@@ -1,6 +1,6 @@
-# GFANZ docker files
+# GBS pipelines experiment
 
-There are some dockers maintained in this repository. Dockers built here are available from https://docker.genomics.nz.
+Each pipeline is installed in a docker image.
 
 ### Running in a docker context
 
