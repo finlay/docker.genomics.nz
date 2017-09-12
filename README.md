@@ -2,7 +2,7 @@
 
 There are some dockers maintained in this repository. Dockers built here are available from https://docker.genomics.nz.
 
-# Running in a docker context
+### Running in a docker context
 
 To use a docker to run a particular project, you can use the following command:
 
