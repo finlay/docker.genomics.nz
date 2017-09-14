@@ -1,5 +1,5 @@
 ## Docker image
-IMAGE=tassel5
+IMAGE ?= docker.dragonfly.co.nz/gbs-pipelines/tassel5
 DOCKER ?= docker run --rm --user=$$(id -u):$$(id -g) -v $$(pwd):/work -w /work
 
 CHECKOUT ?= /opt/tassel5
