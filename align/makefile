@@ -21,6 +21,8 @@ aligns:
 alignp:
 	$(DOCKER) $(IMAGE) $(BWAMEM) PE $(INDEX) $(FASTQ1) $(FASTQ2) $(BAM)
 
+test: index aligns
+
 interact:
 	$(DOCKER) -it $(IMAGE) bash
 
