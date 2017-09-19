@@ -1,5 +1,5 @@
 ## Docker image
-IMAGE ?= docker.dragonfly.co.nz/gbs-pipelines/bwa:fa418f8
+IMAGE ?= docker.dragonfly.co.nz/gbs-pipelines/bwa:374511d
 DOCKER ?= docker run --rm --user=$$(id -u):$$(id -g) -v $$(pwd):/work -w /work
 
 REF ?= MT.fa 
