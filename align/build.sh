@@ -2,8 +2,8 @@
 
 set ex
 
-#export IMAGE=
-#export DOCKER=
+export IMAGE=
+export DOCKER=
 
 #make index
 make aligns
