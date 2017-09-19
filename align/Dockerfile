@@ -11,5 +11,6 @@ RUN conda config --add channels bioconda
 RUN conda install -y bwa=0.7.15
 RUN conda install -y samtools
 
+USER root
 CMD ["bwa"]
 
