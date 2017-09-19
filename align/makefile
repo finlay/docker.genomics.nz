@@ -31,3 +31,4 @@ docker:
 
 clean:
 	rm -f MT.fa.* *.sam *.bam
+
