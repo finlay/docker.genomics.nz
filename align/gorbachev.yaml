@@ -1,1 +1,1 @@
-docker: docker.dragonfly.co.nz/gbs-pipelines/bwa:374511d
+docker: docker.genomics.nz/gbs-pipelines/bwa:374511d
