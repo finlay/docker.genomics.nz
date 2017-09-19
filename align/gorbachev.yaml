@@ -1,1 +1,1 @@
-docker: docker.dragonfly.co.nz/gbs-pipelines/tassel5:fa418f8
+docker: docker.dragonfly.co.nz/gbs-pipelines/bwa:fa418f8
