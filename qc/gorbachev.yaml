@@ -1,1 +1,1 @@
-docker: docker.genomics.nz/gbs-pipelines/bwa:374511d
+docker: docker.genomics.nz/gbs-pipelines/fastqc:374511d
