@@ -1,11 +1,12 @@
 #!/bin/bash
 
+printenv | grep ROBOT
+
 set ex
 
 export IMAGE=
 export DOCKER=
 
-printenv | grep ROBOT
 
 ## make fastqc
 ## 
