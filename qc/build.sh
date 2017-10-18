@@ -5,8 +5,10 @@ set ex
 export IMAGE=
 export DOCKER=
 
-make fastqc
+printenv | grep ROBOT
 
-cp *.zip *.html /output/
-
+## make fastqc
+## 
+## cp *.zip *.html /output/
+## 
 
