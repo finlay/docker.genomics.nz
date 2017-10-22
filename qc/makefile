@@ -1,6 +1,6 @@
 ## Docker image
 IMAGE ?= docker.genomics.nz/gbs-pipelines/fastqc:374511d
-DOCKER ?= /bin/docker run --rm --user=$$(id -u):$$(id -g) -v $$(pwd):/work -w /work
+DOCKER ?= docker run --rm --user=$$(id -u):$$(id -g) -v $$(pwd):/work -w /work
 
 FASTQ ?= test.fq
 FASTQC ?= fastqc
