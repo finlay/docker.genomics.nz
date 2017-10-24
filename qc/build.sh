@@ -3,7 +3,7 @@
 set ex
 
 ## Get data from the object store
-env | grep OS
+env | grep PROJECT
 
 
 
