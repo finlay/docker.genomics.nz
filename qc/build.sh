@@ -1,15 +1,15 @@
 #!/bin/bash
 
-printenv | grep ROBOT
-
 set ex
 
-export IMAGE=
-export DOCKER=
+swift --verbose download reference-data
 
+ls -ltr
 
-## make fastqc
-## 
-## cp *.zip *.html /output/
-## 
+zcat *fastq.gz | fastqc stdin
+
+ls -ltr 
+ 
+cp *.zip *.html /output/
+ 
 
