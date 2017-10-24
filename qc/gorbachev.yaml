@@ -1,3 +1,3 @@
 docker: docker.genomics.nz/gbs-pipelines/fastqc:v3
-cpus: 2
-memory: 4
+cpus: 4
+memory: 14
