@@ -2,8 +2,8 @@
 
 set ex
 
-## Get data from the object store
-env | grep PROJECT
+swift --verbose download reference-data
+
 
 
 
