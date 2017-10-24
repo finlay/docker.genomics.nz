@@ -1,8 +1,12 @@
 #!/bin/bash
 
-printenv | grep ROBOT
-
 set ex
+
+## Get data from the object store
+env | grep OS
+
+
+
 
 export IMAGE=
 export DOCKER=
