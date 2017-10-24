@@ -1,5 +1,5 @@
 ## Docker image
-IMAGE ?= docker.genomics.nz/gbs-pipelines/fastqc:v2
+IMAGE ?= docker.genomics.nz/gbs-pipelines/fastqc:v3
 DOCKER ?= docker run --rm --user=$$(id -u):$$(id -g) -v $$(pwd):/work -w /work
 
 FASTQ ?= test.fq

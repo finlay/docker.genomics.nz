@@ -9,7 +9,7 @@ LABEL version="0.7.15"
 RUN conda install -y fastqc 
 
 USER root
-RUN apt-get update && apt-get install -y python-swiftclient
+RUN apt-get update && apt-get install -y python3-swiftclient
 
 CMD ["fastqc"]
 
