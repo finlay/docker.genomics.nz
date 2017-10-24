@@ -2,11 +2,11 @@
 
 set ex
 
-swift --verbose download reference-data
+swift --verbose list reference-data
 
-ls -ltr
-
-zcat *fastq.gz | fastqc stdin
+( for f in $(swift  list reference-data | grep fastq.gz$); do
+    swift download reference-data $f -o - | zcat
+done ) | fastqc stdin
 
 ls -ltr 
  
