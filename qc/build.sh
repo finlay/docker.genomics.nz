@@ -4,16 +4,12 @@ set ex
 
 swift --verbose download reference-data
 
+ls -ltr
 
+zcat *fastq.gz | fastqc stdin
 
-
-
-export IMAGE=
-export DOCKER=
-
-
-## make fastqc
-## 
-## cp *.zip *.html /output/
-## 
+ls -ltr 
+ 
+cp *.zip *.html /output/
+ 
 
