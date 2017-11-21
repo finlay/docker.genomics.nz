@@ -1,1 +1,2 @@
 docker: docker.dragonfly.co.nz/gbs-pipelines/axe:v1
+requires: GBS-qc
