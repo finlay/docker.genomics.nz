@@ -9,7 +9,7 @@ LABEL license="BSD (3-clause)"
 
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
-       vim git make wget \
+       vim git make wget curl \
 	&& rm -rf /var/lib/apt/lists/*
 
 RUN wget https://software.broadinstitute.org/gatk/download/auth?package=BETA -O GenomeAnalysisTK.tar.bz2 
