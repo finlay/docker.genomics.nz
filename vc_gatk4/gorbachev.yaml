@@ -1,3 +1,1 @@
-requires: [ EG-grapes-align ]
-docker: docker.genomics.nz/gbs-pipelines/vc_gatk:v1
-allows: [ EG-grapes-vc-join  ]
+docker: docker.genomics.nz/gbs-pipelines/vc_gatk:v4.beta.5
