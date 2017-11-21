@@ -1,5 +1,5 @@
 ## Docker image
-IMAGE ?= docker.genomics.nz/gbs-pipelines/bwa:374511d
+IMAGE ?= docker.genomics.nz/gbs-pipelines/bwa:0.7.15
 DOCKER ?= docker run --rm --user=$$(id -u):$$(id -g) -v $$(pwd):/work -w /work
 
 REF ?= MT.fa 
@@ -28,6 +28,9 @@ interact:
 
 docker:
 	docker build -t $(IMAGE) .
+
+push:
+	docker push $(IMAGE)
 
 clean:
 	rm -f MT.fa.* *.sam *.bam
