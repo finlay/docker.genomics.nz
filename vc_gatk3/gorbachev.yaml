@@ -1,0 +1,1 @@
+docker: docker.genomics.nz/gbs-pipelines/vc_gatk:v3.8
