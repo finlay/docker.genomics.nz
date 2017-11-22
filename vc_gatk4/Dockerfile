@@ -9,11 +9,13 @@ LABEL license="BSD (3-clause)"
 
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
-       vim git make wget curl \
+       vim git make wget curl python\
 	&& rm -rf /var/lib/apt/lists/*
 
-RUN wget https://software.broadinstitute.org/gatk/download/auth?package=BETA -O GenomeAnalysisTK.tar.bz2 
-RUN tar xvf  GenomeAnalysisTK.tar.bz2
-RUN mv GenomeAnalysisTK-3.8-0-ge9d806836/GenomeAnalysisTK.jar /	
+RUN wget https://software.broadinstitute.org/gatk/download/auth?package=BETA -O gatk-4.beta.5.zip 
+RUN unzip gatk-4.beta.5.zip
+RUN rm  gatk-4.beta.5.zip
+
+RUN wget https://github.com/broadinstitute/picard/releases/download/2.15.0/picard.jar -O picard.jar 
 
 CMD ["bash"]
